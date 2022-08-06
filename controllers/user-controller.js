@@ -77,8 +77,8 @@ const userController = {
   // add friend to user
   addFriend({ params, body }, res) {
     User.findOneAndUpdate(
-      { _id: params.commentId },
-      { $push: { replies: body } },
+      { _id: params.id },
+      { $push: { friends: params.friendId } },
       { new: true, runValidators: true }
     )
     .populate({
@@ -99,8 +99,8 @@ const userController = {
   // remove friend from user
   deleteFriend({ params }, res) {
     User.findOneAndUpdate(
-      { _id: params.commentId },
-      { $pull: { replies: { replyId: params.replyId } } },
+      { _id: params.id },
+      { $pull: { friends: params.friendId } },
       { new: true }
     )
     .populate({
