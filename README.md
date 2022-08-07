@@ -49,7 +49,7 @@
     https://github.com/jleitz27/social-network-api  
 
   ## Link to walkthrough video
-  https://frozen-oasis-37527.herokuapp.com/ 
+  https://www.screencast.com/t/eoidrsbkpr 
 
 <p align="center">
   <img src="./lib/images/screenshot.png" width="350"
